@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --blue: hsla(209, 54%, 46%, 1);
+  --white: #EEEEEE;
+  --mainBlack: hsla(0, 0%, 9%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white)
+}
+
+nav {
+  background-color: var(--mainBlack);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: 5px solid var(--blue);
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+h1 span {
+  color: var(--blue);
+  margin-left: 1em;
+}
+
+.logo {
+  width: 150px;
+  max-height: 85px;
+  object-fit: cover;
+  opacity: 1;
+  display: inline-block;
+  object-position: 0 -20px;
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown {
+  display: block;
+  position: relative;
+  z-index: 1;
+  user-select: none;
+  padding: 1em;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dropdown span {
+  display: block;
+  position: relative;
+  transform-origin: 0 0;
+  z-index: 1;
+  transition: 0.4s;
+
+  background-color: var(--white);
+  border-radius: 6px;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 4px;
+}
+
+.dropdown:hover span:nth-child(2) {
+  transform: translateX(-5px);
+  background-color: var(--blue);
+}
+
+.dropdown.is-active span:nth-child(1) {
+  transform: translate(0px, -5px) rotate(45deg);
+}
+
+.dropdown.is-active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+.dropdown.is-active span:nth-child(3) {
+  transform: translate(-3px, 4px) rotate(-45deg);
+}
+
+.menu {
+  display: none;
+  flex: 1 1 0%;
+  justify-content: center;
+}
+
+.menu a {
+  margin: 0em 1em;
+  transition: 0.4s;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+.menu a.is-active, a:hover {
+  background-color: var(--blue);
+  box-shadow: 1px 1px 20px var(--blue);
+}
+
+@media (min-width: 768px) {
+  .dropdown {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}
