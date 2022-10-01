@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 :root {
-  --red: #D966BC;
+  --blue: #3677b3;
   --white: #EEEEEE;
   --mainBlack: hsla(0, 0%, 9%, 1);
   --secondBlack: hsla(0, 0%, 12%, 1);
@@ -22,7 +22,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 99;
-  border-bottom: 3px solid var(--red);
+  border-bottom: 3px solid var(--blue);
 }
 
 body {
@@ -39,7 +39,7 @@ h1 {
 }
 
 h1 span {
-  color: var(--red);
+  color: var(--blue);
   margin-left: 1em;
 }
 
@@ -105,7 +105,7 @@ footer {
 
 .dropdown:hover span:nth-child(2) {
   transform: translateX(-5px);
-  background-color: var(--red);
+  background-color: var(--blue);
 }
 
 .dropdown.is-active span:nth-child(1) {
@@ -137,8 +137,8 @@ footer {
 }
 
 .menu a.is-active, a:hover {
-  background-color: var(--red);
-  box-shadow: 1px 1px 20px var(--red);
+  background-color: var(--blue);
+  box-shadow: 1px 1px 20px var(--blue);
 }
 
 .buttons {
@@ -154,17 +154,17 @@ footer {
 
 .login-button {
   background-color: transparent;
-  color: var(--red);
-  border: 3px solid var(--red);
+  color: var(--blue);
+  border: 3px solid var(--blue);
   border-radius: 5px;
   transition: 0.4s;
 }
 
 .login-button:hover {
-  background-color: var(--red);
+  background-color: var(--blue);
   color: var(--white);
   cursor: pointer;
-  box-shadow: 1px 1px 20px var(--red);
+  box-shadow: 1px 1px 20px var(--blue);
 }
 
 .register-button {
@@ -189,7 +189,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  border-top: 3px solid var(--red);
+  border-top: 3px solid var(--blue);
   padding-top: 2em;
 }
 
