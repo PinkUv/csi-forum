@@ -40,7 +40,7 @@ h1 {
 
 h1 span {
   color: var(--blue);
-  margin-left: 1em;
+  margin-left: .2em;
 }
 
 hr {
@@ -70,7 +70,6 @@ i {
   display: inline-block;
   object-position: 0 -20px;
   vertical-align: top;
-  margin-right: 1em;
 }
 
 .container {
