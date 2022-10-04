@@ -57,9 +57,8 @@ footer {
 }
 
 i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 20px;
+  min-width: auto;
 }
 
 .logo {
@@ -73,7 +72,7 @@ i {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -207,11 +206,11 @@ i {
   padding: 2em;
 }
 
-/* Register begin */
+/* Modal begin */
 
 
 
-/* Register end */
+/* Modal end */
 
 @media (min-width: 768px) {
   .dropdown {

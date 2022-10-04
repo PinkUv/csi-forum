@@ -22,12 +22,23 @@
       <h1><span class="decor">NOT CSI</span>HS Forums</h1>
 
       <div class="menu">
-        <a href="index.html" class="is-active" >Home</a>
-        <a href="#">Forum</a>
-        <a href="#">Members</a>
+
+        <a href="index.html" class="is-active">
+          <i class="fa-solid fa-house"></i>
+          Home</a>
+
+        <a href="#">
+          <i class="fa-solid fa-message"></i>
+          Forums</a>
+          
+        <a href="#">
+          <i class="fa-solid fa-users"></i>
+          Members</a>
+
         <a href="https://discord.gg/kKsBQTdTxc" target="_blank">
           <i class="fa-brands fa-discord"></i>
           Discord</a>
+
       </div>
 
       <div class="buttons">
@@ -61,10 +72,12 @@
 
           <form action="#">
             <div class="input-field">
-              <input type="email" id="email" pattern=".+@nycstudents\.net">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="email" pattern=".+@nycstudents\.net" placeholder="Email" required>
             </div>
             <div class="input-field">
-              <input type="email" id="username" pattern=".+@nycstudents\.net">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="password" placeholder="Password" required>
             </div>
           </form>
         </div>
