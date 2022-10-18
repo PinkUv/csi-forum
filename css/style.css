@@ -324,12 +324,13 @@ footer h1 {
   margin-bottom: 50vh;
 
   position: relative;
-  z-index: 1;
+  z-index: 1; 
 }
 
 .error-cont div {
   background-color: var(--mainBlack);
   border: 3px solid var(--blue);
+  border-radius: 8px;
   box-shadow: 1px 1px 20px var(--blue);
   min-width: 538px;
   padding: 30px;
