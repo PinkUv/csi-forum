@@ -3,11 +3,11 @@ tsParticles.load('tsparticles', {
     links: {
       enable: true,
       opacity: 1,
-      distance: 200
+      distance: 100
     },
     move: {
       enable: true,
-      speed: {min: 1, max: 3},
+      speed: {min: 1, max: 2},
     },
     opacity: {
       value: {min: 0.3, max: 0.7},
